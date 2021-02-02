@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { CallbackHook } from "./components/05-memos/CallbackHook";
+// import { CallbackHook } from "./components/05-memos/CallbackHook";
+import { Padre } from "./components/06-tarea-memo/Padre";
 // import { MemoHook } from "./components/05-memos/MemoHook";
 // import { FocusScreen } from "./components/03-useRef/FocusScreen";
 // import { RealExampleUseRef } from "./components/03-useRef/RealExampleUseRef";
@@ -13,4 +14,4 @@ import { CallbackHook } from "./components/05-memos/CallbackHook";
 // import { HookApp } from "./HookApp";
 // import { SimpleForm } from "./components/02-useEffect/SimpleForm";
 
-ReactDOM.render(<CallbackHook />, document.getElementById("root"));
+ReactDOM.render(<Padre />, document.getElementById("root"));
