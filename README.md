@@ -20,3 +20,13 @@ Para memorizar algo y que solo sus properties cambian, va a volverse a memorizar
 4. Usualmente recibe dos argumetos
 
 <img src="./public/imgs/useReducer.png" alt="useReducer" />
+
+## useContext
+
+Pasando props de padre a hijo de hijo a nieto..
+
+<img src="./public/imgs/props-padre-to-hijos.png" alt="useContext" />
+
+Simplificacion con el useContext:
+
+<img src="./public/imgs/useContext.png" alt="useContext" />
