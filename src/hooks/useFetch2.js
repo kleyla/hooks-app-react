@@ -1,8 +1,7 @@
-import { useEffect, useRef, useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export const useFetch = (url) => {
   const isMounted = useRef(true);
-
   const [state, setState] = useState({
     data: null,
     loading: true,
@@ -17,22 +16,24 @@ export const useFetch = (url) => {
 
   useEffect(() => {
     setState({ data: null, loading: true, error: null });
+
     fetch(url)
       .then((resp) => resp.json())
       .then((data) => {
-        setTimeout(() => {
-          console.log("Esta mondado? " + isMounted.current);
-
-          if (isMounted.current) {
-            setState({
-              loading: false,
-              error: null,
-              data,
-            });
-          } else {
-            console.log("setState no se llamo");
-          }
-        }, 1000);
+        if (isMounted.current) {
+          setState({
+            loading: false,
+            error: null,
+            data,
+          });
+        }
+      })
+      .catch(() => {
+        setState({
+          data: null,
+          loading: false,
+          error: "No se pudo cargar la info",
+        });
       });
   }, [url]);
 

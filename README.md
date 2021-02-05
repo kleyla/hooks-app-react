@@ -30,3 +30,14 @@ Pasando props de padre a hijo de hijo a nieto..
 Simplificacion con el useContext:
 
 <img src="./public/imgs/useContext.png" alt="useContext" />
+
+## TESTING HOOKS
+
+https://react-hooks-testing-library.com/
+
+```
+npm i --save-dev enzyme
+npm install --save-dev @wojtekmaj/enzyme-adapter-react-17
+npm install --save-dev enzyme-to-json
+npm install --save-dev @testing-library/react-hooks
+```
