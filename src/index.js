@@ -9,13 +9,13 @@ import { MainApp } from "./components/08-useContext/MainApp";
 // import { RealExampleUseRef } from "./components/03-useRef/RealExampleUseRef";
 // import { Layout } from "./components/04-useLayoutEffect/Layout";
 // import { Memorize } from "./components/05-memos/Memorize";
-// import { FormWithCustomHook } from "./components/02-useEffect/FormWithCustomHook";
+import { FormWithCustomHook } from "./components/02-useEffect/FormWithCustomHook";
 // import { MultipleCustomHooks } from "./components/examples/MultipleCustomHooks";
 // import { CounterApp } from "./components/01-useState/CounterApp";
 // import { CounterWithCustomHook } from "./components/01-useState/CounterWithCustomHook";
 // import { HookApp } from "./HookApp";
-// import { SimpleForm } from "./components/02-useEffect/SimpleForm";
+import { SimpleForm } from "./components/02-useEffect/SimpleForm";
 
-ReactDOM.render(<MainApp />, document.getElementById("root"));
+ReactDOM.render(<FormWithCustomHook />, document.getElementById("root"));
 
 // import "./components/07-useReducer/intro-reducer";
